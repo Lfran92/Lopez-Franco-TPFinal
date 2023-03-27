@@ -6,26 +6,28 @@
 }
 
 @mixin medias {
-    .tarj{
-        
+    .tarj {
+
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 1rem 0 1rem;
-        .tarjetaResponsive{
+
+        .tarjetaResponsive {
             margin: 0 5rem 0 5rem;
         }
     }
 }
 
-@mixin mediaTablet{
-    .tarj{
-        
+@mixin mediaTablet {
+    .tarj {
+
         display: flex;
         justify-content: center;
         align-items: center;
         margin: 0 1rem 0 9rem;
-        .tarjetaResponsive{
+
+        .tarjetaResponsive {
             margin: 0 10rem 0 2rem;
         }
     }

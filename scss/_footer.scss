@@ -14,8 +14,9 @@
         list-style: none;
         color: $lineas;
 
-        @include links ;
-            &:hover {
+        @include links;
+
+        &:hover {
             color: #61045f;
             transition: 0.4s;
 
@@ -46,17 +47,15 @@
     display: flex;
     justify-content: end;
     text-align: end;
-    
+
 }
 
-.iconos{
+.iconos {
     display: flex;
     justify-content: end;
     width: 200px;
 }
 
-.color{
+.color {
     color: $letras;
 }
-
-

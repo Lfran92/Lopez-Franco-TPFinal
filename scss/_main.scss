@@ -1,5 +1,4 @@
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -25,6 +24,7 @@ h1 {
     background-color: none;
     height: 3rem;
     margin-bottom: 3rem;
+
     h2 {
         display: flex;
         justify-content: center;
@@ -41,6 +41,7 @@ h1 {
     height: auto;
     transition: all 0.3s ease;
     filter: grayscale(50%);
+
     &:hover {
         filter: grayscale(0%);
         transform: scale(1.03);
@@ -55,13 +56,15 @@ h1 {
     border-image: linear-gradient(to bottom, #aa076b 0%, #61045f 100%);
     border-image-slice: 1;
     margin-bottom: 20px;
-    .imgProducto{
+
+    .imgProducto {
         background-image: url(../img/productos/fondo-prod.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        
+
     }
-    .producto{
+
+    .producto {
         color: $letras;
     }
 }
@@ -71,6 +74,7 @@ h1 {
     color: $letras;
     border: 1px solid #61045f;
     margin-top: 2px;
+
     &:hover {
         background-color: #61045f;
         color: $letras;
@@ -89,6 +93,7 @@ h1 {
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-bottom: 10rem;
+
     .caja {
         background: none;
         display: flex;
@@ -96,6 +101,7 @@ h1 {
         align-items: center;
         flex-direction: column;
         width: 50rem;
+
         input {
             margin: 10px;
             padding-left: 10px;
@@ -110,10 +116,13 @@ h1 {
             font-size: 1rem;
             margin-bottom: 1rem
         }
+
         ;
+
         input::placeholder {
             color: $letras;
         }
+
         .boton {
             margin-top: 1rem;
             width: 16rem;
@@ -121,12 +130,14 @@ h1 {
             background-color: $efecto;
             border-radius: 50px;
             color: $letras;
+
             &:hover {
                 background-color: rgb(12, 13, 14);
                 color: $letras;
                 border-color: $efecto;
             }
         }
+
         .coment {
             margin-top: 2rem;
             height: 200px;
@@ -135,12 +146,13 @@ h1 {
         }
     }
 }
+
 /*mirada mobile, tablet*/
-@media (min-width:350px) and (max-width:600px){
+@media (min-width:350px) and (max-width:600px) {
     @include medias;
 }
 
-@media (min-width:601px)and (max-width:767px){
+@media (min-width:601px)and (max-width:767px) {
     @include mediaTablet;
-    
+
 }
