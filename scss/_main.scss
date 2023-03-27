@@ -1,3 +1,8 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -131,7 +136,7 @@ h1 {
     }
 }
 /*mirada mobile, tablet*/
-@media (min-width:350px)and (max-width:600px){
+@media (min-width:350px) and (max-width:600px){
     @include medias;
 }
 
