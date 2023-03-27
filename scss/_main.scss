@@ -1,0 +1,141 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 50px 0 50px 0;
+    color: $letras;
+}
+
+.cajita {
+    width: 200px;
+    height: 400px;
+}
+
+.imgCarousel {
+    height: 600px;
+    object-fit: cover;
+}
+
+.subtitulo {
+    background-color: none;
+    height: 3rem;
+    margin-bottom: 3rem;
+    h2 {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 0 3rem 0;
+        color: $letras;
+    }
+}
+
+.imagenGaleria {
+    background: none;
+    border-radius: 0.1rem;
+    padding: 0.4rem;
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+    filter: grayscale(50%);
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.03);
+    }
+}
+
+/*Paginas secundarias*/
+.tarjeta1 {
+    background: none;
+    width: 18rem;
+    height: 30rem;
+    border-image: linear-gradient(to bottom, #aa076b 0%, #61045f 100%);
+    border-image-slice: 1;
+    margin-bottom: 20px;
+    .imgProducto{
+        background-image: url(../img/productos/fondo-prod.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .producto{
+        color: $letras;
+    }
+}
+
+.btnColor {
+    background-color: rgb(11, 12, 12);
+    color: $letras;
+    border: 1px solid #61045f;
+    margin-top: 2px;
+    &:hover {
+        background-color: #61045f;
+        color: $letras;
+    }
+}
+
+/*contacto*/
+
+.login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 450px;
+    min-width: 300px;
+    border-radius: 10px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 10rem;
+    .caja {
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50rem;
+        input {
+            margin: 10px;
+            padding-left: 10px;
+            display: block;
+            height: 3rem;
+            width: 20rem;
+            color: $letras;
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background-color: transparent;
+            outline: none;
+            font-size: 1rem;
+            margin-bottom: 1rem
+        }
+        ;
+        input::placeholder {
+            color: $letras;
+        }
+        .boton {
+            margin-top: 1rem;
+            width: 16rem;
+            height: 3rem;
+            background-color: $efecto;
+            border-radius: 50px;
+            color: $letras;
+            &:hover {
+                background-color: rgb(12, 13, 14);
+                color: $letras;
+                border-color: $efecto;
+            }
+        }
+        .coment {
+            margin-top: 2rem;
+            height: 200px;
+            width: 300px;
+            border-radius: 0.6rem;
+        }
+    }
+}
+/*mirada mobile, tablet*/
+@media (min-width:350px)and (max-width:600px){
+    @include medias;
+}
+
+@media (min-width:601px)and (max-width:767px){
+    @include mediaTablet;
+    
+}
